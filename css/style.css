@@ -1,0 +1,128 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+div {
+  display: block;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  margin: 0px;
+  color: white;
+}
+
+.banner {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background-size: cover;
+}
+
+.banner h2 {
+text-align: center;
+}
+
+#logo-cp101 {
+  margin: 42px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+#logo-cp101 ul {
+  list-style: none;
+  margin: 42px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  font-size: 24px
+}
+
+.main-center {
+  margin:12px;
+  width:432px;
+  height: 100px;
+  position: relative;
+}
+
+.main-center h1 {
+  font-size: 43px;
+  font-weight: bold;
+  color: white;
+  text-decoration: overline;
+  text-align: center;
+  position: absolute;
+  top: 158px;
+}
+
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+}
+
+.foot-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  opacity: 66%;
+ }
+
+.foot-container h2, h3 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 13px;
+  font-size: 22px;
+ }
+
+.foot-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px;
+  font-size: 22px;
+  color: white;
+ }
+
+.social-btns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 369px;
+  margin-right: 369px;
+ }
