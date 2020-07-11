@@ -77,31 +77,34 @@ text-align: center;
 
 .main-center {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
-.center-msg h1 {
-  font-size: 43px;
+#center-text {
+  font-size: 33px;
   font-weight: bold;
   color: white;
   text-decoration: overline;
   text-align: center;
   position: absolute;
-  top: 158px;
+  top: 354px;
 }
 
 #center-vid {
   z-index: -1;
   width: 100%;
+  position: relative;
 }
 
 .foot-container {
   display: flex;
   position: absolute;
   bottom: 0;
-  background-image: url("../images/background.png");
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/background.png");
   background-repeat: no-repeat;
+  background-position: bottom;
   width: 100%;
   background-size: cover;
   display: flex;
@@ -119,8 +122,8 @@ text-align: center;
 
 .foot-container ul {
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
+
+
   width: 100%;
   padding: 0px;
   font-size: 22px;
@@ -128,13 +131,23 @@ text-align: center;
  }
 
 .social-btns {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
   margin-left: 369px;
   margin-right: 369px;
  }
 
+#list-scl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 #scl-btn {
-  color: #295575;
+  color: #ffffff;
 }
 
 #scl-btn:hover {
