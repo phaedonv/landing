@@ -5,6 +5,11 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 /* Utilities */
+
+html{
+  background-color: black;
+}
+
 body {
   margin: 0;
   font-family: Open Sans;
@@ -33,6 +38,9 @@ div {
 }
 
 .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   color: white;
@@ -51,25 +59,29 @@ text-align: center;
   align-items: stretch;
   justify-content: space-between;
 }
-#logo-cp101 ul {
-  list-style: none;
-  margin: 42px;
+
+#list {
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  width: 100%;
-  padding: 5px;
-  font-size: 24px
+}
+
+#list ul {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+  font-size: 24px;
+}
+
+#list li {
+  padding: 42px;
 }
 
 .main-center {
-  margin:12px;
-  width:432px;
-  height: 100px;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.main-center h1 {
+.center-msg h1 {
   font-size: 43px;
   font-weight: bold;
   color: white;
@@ -79,12 +91,9 @@ text-align: center;
   top: 158px;
 }
 
-#myVideo {
-  position: fixed;
+#center-vid {
   z-index: -1;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
+  width: 100%;
 }
 
 .foot-container {
@@ -111,7 +120,7 @@ text-align: center;
 .foot-container ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   padding: 0px;
   font-size: 22px;
@@ -119,10 +128,17 @@ text-align: center;
  }
 
 .social-btns {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 0;
   margin-left: 369px;
   margin-right: 369px;
  }
+
+#scl-btn {
+  color: #295575;
+}
+
+#scl-btn:hover {
+  color: #4692ca;
+}
+
+
